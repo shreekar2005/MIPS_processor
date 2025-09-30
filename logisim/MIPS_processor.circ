@@ -17,7 +17,7 @@
       <a name="font" val="SansSerif plain 12"/>
     </tool>
   </lib>
-  <main name="ALU_32"/>
+  <main name="main"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -163,15 +163,6 @@
       <a name="value" val="0x4"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(700,860)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="north"/>
-      <a name="label" val="PC_value"/>
-      <a name="labelfont" val="SansSerif bold 12"/>
-      <a name="labelloc" val="south"/>
-      <a name="type" val="output"/>
-      <a name="width" val="32"/>
-    </comp>
     <comp lib="0" loc="(770,610)" name="Splitter">
       <a name="bit1" val="0"/>
       <a name="bit10" val="0"/>
@@ -291,7 +282,7 @@
       <a name="value" val="0x0"/>
       <a name="width" val="2"/>
     </comp>
-    <comp lib="0" loc="(880,510)" name="Pin">
+    <comp lib="0" loc="(880,500)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="south"/>
       <a name="label" val="Current_OP_Code"/>
@@ -449,7 +440,7 @@
     <comp lib="5" loc="(600,1160)" name="Hex Digit Display"/>
     <comp lib="6" loc="(470,1090)" name="Text">
       <a name="font" val="SansSerif bold 15"/>
-      <a name="text" val="Instruction Byte Address"/>
+      <a name="text" val="Instruction Byte Address (PC value)"/>
     </comp>
     <comp loc="(1060,660)" name="Register_File"/>
     <comp loc="(1330,870)" name="ALU_Control"/>
@@ -528,7 +519,7 @@
     <wire from="(1600,360)" to="(1640,360)"/>
     <wire from="(1650,370)" to="(1650,470)"/>
     <wire from="(1670,350)" to="(1690,350)"/>
-    <wire from="(1690,270)" to="(1690,350)"/>
+    <wire from="(1690,280)" to="(1690,350)"/>
     <wire from="(1790,700)" to="(1850,700)"/>
     <wire from="(1800,660)" to="(1800,740)"/>
     <wire from="(1800,740)" to="(1820,740)"/>
@@ -549,8 +540,8 @@
     <wire from="(400,1160)" to="(400,1190)"/>
     <wire from="(400,1190)" to="(680,1190)"/>
     <wire from="(410,860)" to="(470,860)"/>
-    <wire from="(420,270)" to="(1690,270)"/>
-    <wire from="(420,270)" to="(420,700)"/>
+    <wire from="(420,280)" to="(1690,280)"/>
+    <wire from="(420,280)" to="(420,700)"/>
     <wire from="(420,700)" to="(430,700)"/>
     <wire from="(420,720)" to="(420,960)"/>
     <wire from="(420,720)" to="(430,720)"/>
@@ -573,17 +564,14 @@
     <wire from="(600,1240)" to="(730,1240)"/>
     <wire from="(600,410)" to="(600,710)"/>
     <wire from="(600,410)" to="(680,410)"/>
-    <wire from="(600,710)" to="(600,800)"/>
+    <wire from="(600,710)" to="(600,1010)"/>
     <wire from="(600,710)" to="(660,710)"/>
-    <wire from="(600,800)" to="(600,1010)"/>
-    <wire from="(600,800)" to="(700,800)"/>
     <wire from="(660,1030)" to="(660,1170)"/>
     <wire from="(670,1030)" to="(670,1180)"/>
     <wire from="(670,430)" to="(680,430)"/>
     <wire from="(680,1030)" to="(680,1190)"/>
     <wire from="(690,1030)" to="(690,1200)"/>
     <wire from="(700,1030)" to="(700,1210)"/>
-    <wire from="(700,800)" to="(700,860)"/>
     <wire from="(710,1030)" to="(710,1220)"/>
     <wire from="(720,1030)" to="(720,1230)"/>
     <wire from="(720,420)" to="(840,420)"/>
@@ -611,7 +599,7 @@
     <wire from="(870,690)" to="(910,690)"/>
     <wire from="(880,1090)" to="(980,1090)"/>
     <wire from="(880,310)" to="(920,310)"/>
-    <wire from="(880,510)" to="(880,530)"/>
+    <wire from="(880,500)" to="(880,530)"/>
     <wire from="(880,530)" to="(920,530)"/>
     <wire from="(880,680)" to="(880,1090)"/>
     <wire from="(880,680)" to="(990,680)"/>
@@ -2559,8 +2547,8 @@
     <wire from="(1240,370)" to="(1430,370)"/>
     <wire from="(1240,850)" to="(1420,850)"/>
     <wire from="(320,850)" to="(350,850)"/>
-    <wire from="(350,1370)" to="(870,1370)"/>
-    <wire from="(350,850)" to="(350,1370)"/>
+    <wire from="(350,1320)" to="(870,1320)"/>
+    <wire from="(350,850)" to="(350,1320)"/>
     <wire from="(360,230)" to="(360,260)"/>
     <wire from="(360,260)" to="(360,290)"/>
     <wire from="(360,260)" to="(390,260)"/>
@@ -2733,7 +2721,7 @@
     <wire from="(870,1200)" to="(870,1260)"/>
     <wire from="(870,1260)" to="(870,1280)"/>
     <wire from="(870,1260)" to="(980,1260)"/>
-    <wire from="(870,1280)" to="(870,1370)"/>
+    <wire from="(870,1280)" to="(870,1320)"/>
     <wire from="(870,200)" to="(870,270)"/>
     <wire from="(870,200)" to="(980,200)"/>
     <wire from="(870,270)" to="(870,280)"/>
@@ -2897,14 +2885,6 @@
 1335025 1335824 1336027 ac0a000c 800000c
 </a>
       <a name="dataWidth" val="32"/>
-    </comp>
-    <comp lib="6" loc="(760,150)" name="Text">
-      <a name="font" val="SansSerif bold 12"/>
-      <a name="text" val="ROM =&gt; load instance"/>
-    </comp>
-    <comp lib="6" loc="(780,165)" name="Text">
-      <a name="font" val="Noto Serif Display bold 12"/>
-      <a name="text" val="&quot;./ROM_instances/test_instructions&quot;"/>
     </comp>
     <wire from="(330,200)" to="(380,200)"/>
     <wire from="(340,270)" to="(370,270)"/>
