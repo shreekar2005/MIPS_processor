@@ -1,3 +1,5 @@
+About Instruction Memory : 
+
 # Address      Instruction               # Description
 #-----------------------------------------------------------------------------------------
 0x00000000:         lw   $s1, 0($zero)       # Load A from memory address 0 into register $s1.
@@ -14,3 +16,14 @@
 0x0000002C:         sw   $t2, 12($zero)      # Store the result of the OR ($t2) to memory address 12.
 0x00000030: HALT:   j    HALT                # Infinite loop to halt the processor.
 
+
+
+
+About Data memory : 
+
+For this program to work, you need to pre-load the following 32-bit hexadecimal values into your data memory, also starting from address 0x00000000.
+Memory Address	Hex Value	Decimal Value	Variable Name
+0x00000000	    00000014	20	            A
+0x00000004	    0000001E	30	            B
+0x00000008	    0000F0F0	61680	        C
+0x0000000C	    00000000	0	            Result (init)
