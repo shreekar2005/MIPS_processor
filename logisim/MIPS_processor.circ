@@ -2917,6 +2917,9 @@
       <a name="type" val="output"/>
       <a name="width" val="32"/>
     </comp>
+    <comp lib="0" loc="(1180,490)" name="Clock">
+      <a name="appearance" val="NewPins"/>
+    </comp>
     <comp lib="0" loc="(250,230)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="Byte_address"/>
