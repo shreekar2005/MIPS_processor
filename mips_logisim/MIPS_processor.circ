@@ -687,7 +687,7 @@
       <circ-anchor facing="east" x="170" y="70"/>
       <circ-port dir="in" pin="200,150" x="80" y="90"/>
       <circ-port dir="in" pin="200,280" x="80" y="130"/>
-      <circ-port dir="in" pin="720,620" x="120" y="160"/>
+      <circ-port dir="in" pin="720,590" x="120" y="160"/>
       <circ-port dir="out" pin="1000,330" x="170" y="130"/>
       <circ-port dir="out" pin="1000,70" x="170" y="70"/>
     </appear>
@@ -716,13 +716,10 @@
       <a name="in_width" val="1"/>
       <a name="out_width" val="32"/>
     </comp>
-    <comp lib="0" loc="(720,620)" name="Pin">
+    <comp lib="0" loc="(720,590)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
       <a name="width" val="4"/>
-    </comp>
-    <comp lib="0" loc="(780,540)" name="Constant">
-      <a name="facing" val="west"/>
     </comp>
     <comp lib="1" loc="(500,160)" name="AND Gate">
       <a name="width" val="32"/>
@@ -734,7 +731,6 @@
       <a name="width" val="32"/>
     </comp>
     <comp lib="2" loc="(740,330)" name="Multiplexer">
-      <a name="enable" val="true"/>
       <a name="select" val="4"/>
       <a name="width" val="32"/>
     </comp>
@@ -819,9 +815,7 @@
     <wire from="(660,310)" to="(700,310)"/>
     <wire from="(660,370)" to="(660,510)"/>
     <wire from="(660,370)" to="(700,370)"/>
-    <wire from="(720,410)" to="(720,620)"/>
-    <wire from="(730,410)" to="(730,540)"/>
-    <wire from="(730,540)" to="(780,540)"/>
+    <wire from="(720,410)" to="(720,590)"/>
     <wire from="(740,330)" to="(1000,330)"/>
     <wire from="(940,70)" to="(1000,70)"/>
     <wire from="(940,70)" to="(940,430)"/>
@@ -2918,8 +2912,8 @@
       <a name="addrWidth" val="24"/>
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 24 32
-8c110000 8c120004 232402a 11000002 2324820 8000007 2324822 8c130008
-1335025 1335824 1336027 ac0a000c 800000c
+8c110000 8c120004 232402a 11000002 2324820 8000007 2324822 ac090008
+8000008
 </a>
       <a name="dataWidth" val="32"/>
     </comp>
@@ -2994,6 +2988,14 @@
       <a name="appearance" val="logisim_evolution"/>
       <a name="dataWidth" val="32"/>
       <a name="trigger" val="high"/>
+    </comp>
+    <comp lib="6" loc="(262,143)" name="Text">
+      <a name="font" val="SansSerif plain 20"/>
+      <a name="text" val="This is word addressable now, not byte addressable"/>
+    </comp>
+    <comp lib="6" loc="(385,199)" name="Text">
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="text" val="Converting byte address into word address"/>
     </comp>
     <wire from="(250,230)" to="(300,230)"/>
     <wire from="(260,300)" to="(290,300)"/>
