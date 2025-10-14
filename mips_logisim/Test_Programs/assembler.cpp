@@ -27,7 +27,6 @@ struct DataDetail {
     int address;
 };
 
-// --- MIPS Instruction Definitions (NOW CORRECTED) ---
 set<string> basic_mips_instructions = {
     "add", "sub", "and", "or", "slt", "nor", // R-Type ALU
     "lw", "sw", "beq", "j", // Core instructions from user's CPU
@@ -38,7 +37,7 @@ set<string> i_type_instructions = {"addi", "lw", "sw", "beq", "bne", "lui", "ori
 set<string> j_type_instructions = {"j", "jal"};
 set<string> pseudo_instructions = {"move", "li", "la"};
 
-// --- MIPS Opcode & Funct Code Maps (NOW CORRECTED) ---
+
 unordered_map<string, string> instruction_to_op = {
     {"addi", "001000"}, {"lw", "100011"}, {"sw", "101011"}, {"beq", "000100"},
     {"bne", "000101"}, {"lui", "001111"}, {"ori", "001101"}, {"j", "000010"},
@@ -71,8 +70,6 @@ unordered_map<string, string> register_to_binary = {
 // --- Function Prototypes ---
 void trim(string& str);
 string binaryToHex(const string& bin);
-string hexCharToBinary(char c);
-string hexToBinary(const string& hexString);
 
 string convert_r_to_binary(const string& line);
 string convert_i_to_binary(const string& line, const unordered_map<string, int>& textLabels, const unordered_map<string, int>& dataLabels, int current_pc);
