@@ -19,20 +19,21 @@ op5 op4 op3 op2 op1 op0 | RegDst Jump Branch MemRead MemToReg ALUop1 ALUop0 MemW
 # R-type (add, sub, and, or, slt, etc.)
  0   0   0   0   0   0  |   1     0     0       0       0       1      0       0       0       1    
  0   0   0   0   0   1  |   -     -     -       -       -       -      -       -       -       -  
- # j (Jump)  
+# J-type : j 
  0   0   0   0   1   0  |   -     1     0       -       -       -      -       0       -       0    
  0   0   0   0   1   1  |   -     -     -       -       -       -      -       -       -       -   
- # beq (Branch on Equal) 
+# I-type : beq (Branch on Equal) 
  0   0   0   1   0   0  |   -     0     1       0       -       0      1       0       0       0    
  0   0   0   1   0   1  |   -     -     -       -       -       -      -       -       -       -    
  0   0   0   1   1   0  |   -     -     -       -       -       -      -       -       -       -    
  0   0   0   1   1   1  |   -     -     -       -       -       -      -       -       -       -    
- 0   0   1   0   0   0  |   -     -     -       -       -       -      -       -       -       -    
+# I-type : addi/subi/movi (for subi assemler will convert constant to its negative and movi = addi with $zero)
+ 0   0   1   0   0   0  |   0     0     0       0       0       0      0       0       1       1
  0   0   1   0   0   1  |   -     -     -       -       -       -      -       -       -       -    
- 0   0   1   0   1   0  |   -     -     -       -       -       -      -       -       -       -    
+ 0   0   1   0   1   0  |   -     -     -       -       -       -      -       -       -       -   
  0   0   1   0   1   1  |   -     -     -       -       -       -      -       -       -       -    
- 0   0   1   1   0   0  |   -     -     -       -       -       -      -       -       -       -    
- 0   0   1   1   0   1  |   -     -     -       -       -       -      -       -       -       -    
+ 0   0   1   1   0   0  |   -     -     -       -       -       -      -       -       -       -  
+ 0   0   1   1   0   1  |   -     -     -       -       -       -      -       -       -       -
  0   0   1   1   1   0  |   -     -     -       -       -       -      -       -       -       -    
  0   0   1   1   1   1  |   -     -     -       -       -       -      -       -       -       -    
  0   1   0   0   0   0  |   -     -     -       -       -       -      -       -       -       -    

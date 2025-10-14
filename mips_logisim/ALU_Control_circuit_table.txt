@@ -16,9 +16,9 @@
 
 ALUop1 ALUop0 func5 func4 func3 func2 func1 func0 | AC3 AC2 AC1 AC0
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# LW/SW -> add
+# I-type (lw/sw/addi/subi/movi) -> add
   0      0      -     -     -     -     -     -   |  0   0   1   0 
-# Branch -> subtract
+# I-type (beq) -> subtract
   0      1      -     -     -     -     -     -   |  0   1   1   0 
   1      0      0     0     0     0     0     0   |  -   -   -   - 
   1      0      0     0     0     0     0     1   |  -   -   -   - 
@@ -52,21 +52,21 @@ ALUop1 ALUop0 func5 func4 func3 func2 func1 func0 | AC3 AC2 AC1 AC0
   1      0      0     1     1     1     0     1   |  -   -   -   - 
   1      0      0     1     1     1     1     0   |  -   -   -   - 
   1      0      0     1     1     1     1     1   |  -   -   -   - 
-# R-type 'add'
+# R-type (add)
   1      0      1     0     0     0     0     0   |  0   0   1   0 
   1      0      1     0     0     0     0     1   |  -   -   -   - 
-# R-type 'subtract'
+# R-type (sub)
   1      0      1     0     0     0     1     0   |  0   1   1   0 
   1      0      1     0     0     0     1     1   |  -   -   -   - 
-# R-type 'AND'
+# R-type (and)
   1      0      1     0     0     1     0     0   |  0   0   0   0 
-# R-type 'OR'
+# R-type (or)
   1      0      1     0     0     1     0     1   |  0   0   0   1 
   1      0      1     0     0     1     1     0   |  -   -   -   - 
   1      0      1     0     0     1     1     1   |  -   -   -   - 
   1      0      1     0     1     0     0     0   |  -   -   -   - 
   1      0      1     0     1     0     0     1   |  -   -   -   - 
-# R-type 'set on less than'
+# R-type (slt)
   1      0      1     0     1     0     1     0   |  0   1   1   1 
   1      0      1     0     1     0     1     1   |  -   -   -   - 
   1      0      1     0     1     1     0     0   |  -   -   -   - 
