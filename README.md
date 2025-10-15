@@ -1,14 +1,12 @@
 # MIPS (RISC Processor) on logisim-simulator
 In this repo you will find logisim software (.jar file) and MIPS (.circ file). <br>
 Reference for making our MIPS is class notes <br>
-Note : There is one file called "Control_Unit_circuit_table.txt", That is just image for loading logic table for Control Unit.
 
 ### Following instructions are implemented
-1. R-type instructions (add, sub, and, or, slt, nor)
-2. j (Jump)
-3. beq (Branch on Equal)
-4. lw (Load Word)
-5. sw (Store Word)
+1. R-Type : add, sub, and, or, slt
+2. I-Type : lw, sw, beq, addi
+3. J-Type : j
+4. Pseudo : subi, move
 
 #### Using ROM as Instruction memory and RAM as Data memory
 
@@ -19,11 +17,11 @@ Note : There is one file called "Control_Unit_circuit_table.txt", That is just i
 ## To run MIPS on simulator
 1. Clone git repo
 ```bash
-git clone https://github.com/shreekar2005/building_MIPS_processor.git
+git clone https://github.com/shreekar2005/MIPS_processor.git
 ```
 2. Go to project location
 ```bash
-cd building_MIPS_processor/logisim/
+cd MIPS_processor/mips_logisim
 ```
 3. Run following command to run logisim with our MIPS as project
 ```bash
