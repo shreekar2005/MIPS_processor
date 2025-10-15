@@ -1,0 +1,44 @@
+--- LABEL & ADDRESS MAPPINGS ---
+
+# Text Section Labels:
+# Label Name          Hex Address
+#----------------------------------------
+# end_program         0x00000038
+# skip_jump           0x00000034
+# main                0x00000000
+
+# Data Section Labels:
+# Label Name          Hex Address
+#----------------------------------------
+# result              0x00000008
+# var2                0x00000004
+# var1                0x00000000
+
+
+--- TEXT SECTION (Instructions) ---
+
+Address (PC)  Original Instruction               Hex Code
+--------------------------------------------------------------------------------
+0x00000000    lw      $t0, var1                  8c080000
+0x00000004    lw      $t1, var2                  8c090004
+0x00000008    move    $s0, $t0                   01008020
+0x0000000c    subi    $s1, $t1, 5                2131fffb
+0x00000010    addi    $s0, $s0, 10               2210000a
+0x00000014    add     $s2, $s0, $s1              02119020
+0x00000018    sub     $s3, $s0, $s1              02119822
+0x0000001c    and     $s4, $s0, $s1              0211a024
+0x00000020    or      $s5, $s0, $s1              0211a825
+0x00000024    slt     $s6, $s1, $s0              0230b02a
+0x00000028    sw      $s2, result                ac120008
+0x0000002c    beq     $s1, $t1, skip_jump        12290001
+0x00000030    j       end_program                0800000e
+0x00000034    addi    $s7, $zero, 99             20170063
+
+
+--- DATA SECTION ---
+
+Memory Address      Hex Value         Decimal Value     Label
+--------------------------------------------------------------------------------
+0x00000000          0x0000000f        15                var1
+0x00000004          0x0000000a        10                var2
+0x00000008          0x00000000        0                 result
