@@ -2,7 +2,7 @@
 In this repo you will find logisim software (.jar file) and MIPS (.circ file). <br>
 Reference for making our MIPS is class notes <br>
 
-## For detail report, you may read `MIPS_processor_Report.pdf` which is added to this repo only :)
+## For detail report, you may read [`MIPS_processor_Report.pdf`](https://github.com/shreekar2005/MIPS_processor/blob/main/MIPS_processor_Report.pdf) which is added to this repo only :)
 
 ### Following instructions are implemented
 1. **R-Type** : add, sub, and, or, slt
