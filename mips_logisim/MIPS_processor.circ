@@ -357,7 +357,7 @@
     <comp lib="0" loc="(920,620)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
-      <a name="label" val="op_Code"/>
+      <a name="label" val="B_op_Code"/>
       <a name="labelfont" val="SansSerif bold 12"/>
       <a name="labelloc" val="north"/>
       <a name="type" val="output"/>
@@ -366,7 +366,7 @@
     <comp lib="0" loc="(950,1050)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="udec_write_reg"/>
+      <a name="label" val="uDEC_write_reg"/>
       <a name="labelfont" val="SansSerif bold 12"/>
       <a name="labelloc" val="south"/>
       <a name="radix" val="10unsigned"/>
@@ -386,7 +386,7 @@
     <comp lib="0" loc="(950,950)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="udec_rs"/>
+      <a name="label" val="uDEC_rs"/>
       <a name="labelfont" val="SansSerif bold 12"/>
       <a name="labelloc" val="south"/>
       <a name="radix" val="10unsigned"/>
@@ -396,7 +396,7 @@
     <comp lib="0" loc="(950,990)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="udec_rt"/>
+      <a name="label" val="uDEC_rt"/>
       <a name="labelfont" val="SansSerif bold 12"/>
       <a name="labelloc" val="south"/>
       <a name="radix" val="10unsigned"/>
