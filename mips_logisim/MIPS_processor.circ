@@ -2729,8 +2729,14 @@
     <a name="simulationFrequency" val="1.0"/>
     <appear>
       <rect fill="#ffc996" height="128" stroke="#000000" stroke-width="2" width="90" x="50" y="61"/>
+      <ellipse cx="95" cy="158" fill="#ff191d" rx="15" ry="16" stroke="#000000"/>
       <text dominant-baseline="central" font-family="SansSerif" font-size="13" font-weight="bold" text-anchor="middle" x="94" y="105"> Instruction</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="13" font-weight="bold" text-anchor="middle" x="94" y="122">Memory</text>
+      <polygon fill="#ffb174" points="101,143 111,136 107,149 106,146 104,144" stroke="#000000"/>
+      <polygon fill="#ffb174" points="87,144 80,136 82,149 85,145" stroke="#000000"/>
+      <ellipse cx="91" cy="156" fill="#6aff52" rx="1" ry="2" stroke="#000000"/>
+      <ellipse cx="101" cy="157" fill="#6aff52" rx="1" ry="2" stroke="#000000"/>
+      <polyline fill="#ffafbb" points="90,164 103,164 100,168 94,169 91,166" stroke="#000000"/>
       <circ-anchor facing="east" x="140" y="60"/>
       <circ-port dir="in" pin="360,200" x="50" y="110"/>
       <circ-port dir="out" pin="820,260" x="140" y="100"/>
@@ -2784,8 +2790,14 @@
     <a name="simulationFrequency" val="1.0"/>
     <appear>
       <rect fill="#88ffc9" height="130" stroke="#000000" stroke-width="2" width="90" x="50" y="50"/>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="14" font-weight="bold" text-anchor="middle" x="95" y="106">Data</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="14" font-weight="bold" text-anchor="middle" x="96" y="121">Memory</text>
+      <ellipse cx="95" cy="143" fill="#ff191d" rx="15" ry="16" stroke="#000000"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="14" font-weight="bold" text-anchor="middle" x="93" y="90">Data</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="14" font-weight="bold" text-anchor="middle" x="97" y="108">Memory</text>
+      <polygon fill="#ffb174" points="101,128 111,121 107,134 106,131 104,129" stroke="#000000"/>
+      <ellipse cx="91" cy="141" fill="#fbff82" rx="1" ry="2" stroke="#000000"/>
+      <polyline fill="#ffafbb" points="90,149 103,149 100,153 94,154 91,151" stroke="#000000"/>
+      <ellipse cx="101" cy="142" fill="#fbff82" rx="1" ry="2" stroke="#000000"/>
+      <polygon fill="#ffb174" points="87,129 80,121 82,134 85,130" stroke="#000000"/>
       <circ-anchor facing="east" x="140" y="110"/>
       <circ-port dir="in" pin="380,230" x="50" y="80"/>
       <circ-port dir="in" pin="380,370" x="50" y="170"/>
