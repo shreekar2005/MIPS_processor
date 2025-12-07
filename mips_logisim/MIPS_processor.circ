@@ -137,6 +137,7 @@
     </comp>
     <comp lib="0" loc="(610,880)" name="Pin">
       <a name="appearance" val="classic"/>
+      <a name="initial" val="0x20110032"/>
       <a name="label" val="HEX_custom_instruction"/>
       <a name="labelloc" val="south"/>
       <a name="radix" val="16"/>
@@ -2770,8 +2771,8 @@
       <a name="addrWidth" val="24"/>
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 24 32
-8c080000 8c090004 1008020 2131fffb 2210000a 2119020 2119822 211a024
-211a825 230b02a ac120008 12290001 800000e 20170063
+20110032 20120028 232402a 11000002 2324820 8000007 2324822 ac090000
+8000008
 </a>
       <a name="dataWidth" val="32"/>
     </comp>
